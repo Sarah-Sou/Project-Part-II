@@ -27,3 +27,7 @@ All the data is stored in the browser using LocalStorage. No backend or server i
 Each person in the group contributed to different parts of the project.  
 (Our group breakdown is included in the PDF.)
 
+Cited Websites that were used to help with troubleshooting and completing the assignment 
+https://www.w3schools.com/html/default.asp
+https://www.freecodecamp.org/learn/responsive-web-design-v9/#lecture-understanding-the-html-boilerplate
+https://developer.mozilla.org
