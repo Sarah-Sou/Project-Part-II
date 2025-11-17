@@ -5,18 +5,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-
-<body>
-
+<body onload="loadViewHabit()">
 
 <h1>Habit Details</h1>
 
-
-<!-- Container where the script will insert the habit details -->
+<!-- Where habit details will show -->
 <div id="details"></div>
-
 
 <br>
 
+<button onclick="window.location='edit.html'">Edit Habit</button>
+<button onclick="deleteHabit()">Delete Habit</button>
+<button onclick="window.location='index.html'">Back</button>
 
-<button oncli
+<script src="script.js"></script>
+</body>
+</html>
+
