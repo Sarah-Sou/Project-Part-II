@@ -1,0 +1,28 @@
+{
+  "name": "infr3120-fall25-project",
+  "version": "1.0.0",
+  "description": "This project is my Part 1 submission for INFR3120 (Web & Script Programming).  \r I decided to build a simple Student Habit Tracker that lets users create habits, view them, update them, and delete them. It’s a basic CRUD web app using HTML, CSS, and JavaScript with LocalStorage, but it represents the main idea of how habits can be tracked in a clean and easy way.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sarah-Sou/INFR3120-Fall25-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Sarah-Sou/INFR3120-Fall25-Project/issues"
+  },
+  "homepage": "https://github.com/Sarah-Sou/INFR3120-Fall25-Project#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^9.0.0"
+  }
+}
