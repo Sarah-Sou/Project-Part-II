@@ -1,76 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Create New Habit - Habit Tracker</title>
-
-    <!-- Linked CSS file -->
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 601px) and (max-width: 900px)">
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
-    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 901px)">
-
+    <title>Create a New Habit</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header / Navigation -->
-    <header class="header">
-        <div class="logo">
-            <img src="HabitTracker.jpg" alt="Photo of HabitTracker" width="50"/>
-        </div>
-        <nav class="nav">
-            <ul class="clearfix">
-                <li class="element"><a href="index.html">Home (All Habits)</a></li>
-                <li class="element"><a href="create.html">Create Habit</a></li>
-            </ul>
-        </nav>
-    </header>
+<h1>Create a New Habit</h1>
 
-    <!-- Home Section -->
-    <main id="main">
-        <h1>Create a New Habit</h1>
-        <p>Fill out the form in order to add a new habit to the tracker</p>
+<form onsubmit="saveHabit(event)">
+    Habit Name: <input type="text" id="habitName"><br><br>
 
-        <form id="createForm"
-        
-            <div>
-                <label for"habitName">Habit Name:<label>
-                <input type="text" id="habitName" required placeholder="e.g, Going to the gym in the morning"
-            </div>
+    Frequency:
+    <select id="frequency">
+        <option>Daily</option>
+        <option>Weekly</option>
+        <option>Monthly</option>
+    </select><br><br>
 
-            <br>
+    Status:
+    <select id="status">
+        <option>Not Started</option>
+        <option>In Progress</option>
+        <option>Completed</option>
+    </select><br><br>
 
-            <div>
-                <label for="habitFrequency">Frequency:</label>
-                <select id="habitFrequency" required>
-                    <option value="">-- Select an option--</option>
-                    <option value="Daily">Daily</option>
-                    <option value="Weekly">Weekly</option>
-                    <option value="Every Other Day"</option>
-                </select>
-            </div>
+    <button type="submit">Create Habit</button>
+</form>
 
-            <br>
-        
-            </div>
-                <label for="habitGoal">My Goal:</label>
-                <textarea id="habitGoal" placeholder="e.g, Complete 4 Exercises"></textarea>
-            </div>
+<br>
+<button onclick="window.location='index.html'">Back</button>
 
-            <br>
-
-            <button type="submit">Create Habit</button>
-        </form>
-    </main>
-
-    <footer id="customfooter">
-        <p>Copyright &copy; 2025 Group 47</p>
-    </footer>
-
-    <script src="script.js" defer></script>
+<script src="script.js"></script>
 </body>
 </html>
-
-
-
