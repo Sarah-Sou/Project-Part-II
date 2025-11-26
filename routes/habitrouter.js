@@ -87,4 +87,4 @@ router.post("/:id/delete", requireLogin, async (req, res) => {
   }
 });
 
-module.exports = router;
+
