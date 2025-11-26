@@ -1,0 +1,14 @@
+<nav>
+  <a href="/">Home</a>
+
+  <% if (!session.user) { %>
+      <a href="/login">Login</a>
+      <a href="/register">Register</a>
+  <% } else { %>
+      <a href="/habits">My Habits</a>
+      <a href="/habits/create">Add Habit</a>
+      <a href="/logout">Logout</a>
+  <% } %>
+</nav>
+
+<hr>

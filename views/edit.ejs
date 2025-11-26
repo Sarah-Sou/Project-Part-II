@@ -1,0 +1,17 @@
+<%- include("partials/navbar") %>
+
+<h1>Edit Habit</h1>
+
+<form action="/habits/<%= habit._id %>/edit" method="POST">
+
+  <label>Name:</label>
+  <input type="text" name="name" value="<%= habit.name %>">
+
+  <label>Description:</label>
+  <input type="text" name="description" value="<%= habit.description %>">
+
+  <label>Frequency:</label>
+  <input type="text" name="frequency" value="<%= habit.frequency %>">
+
+  <button>Update Habit</button>
+</form>

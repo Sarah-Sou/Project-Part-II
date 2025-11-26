@@ -1,0 +1,20 @@
+<%- include("partials/navbar") %>
+
+<h1>Your Habits</h1>
+
+<a href="/habits/create">+ Add New Habit</a>
+
+<ul>
+  <% habits.forEach(h => { %>
+    <li>
+      <strong><%= h.name %></strong> — <%= h.frequency %>
+      <br>
+      <%= h.description %>
+      <br>
+      <a href="/habits/<%= h._id %>/edit">Edit</a>
+      <form action="/habits/<%= h._id %>/delete" method="POST" style="display:inline">
+        <button>Delete</button>
+      </form>
+    </li>
+  <% }) %>
+</ul>
