@@ -1,4 +1,3 @@
-//Routes
 const express = require("express");
 const Habit = require("../models/habit");
 const requireLogin = require("../middleware/requireLogin");
